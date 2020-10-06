@@ -82,6 +82,17 @@ body {
     }
   }
 
+.table{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  border-color: black;
+}
+
+.table .name{
+  text-align: left;
+}
+
 .form{
     width:80%;
     margin-left: 10% ;

@@ -24,11 +24,32 @@
     <h1 class="head">30 Days of Google Cloud CET Leader Board</h1>
     <div class="section">
     <br>
-    {% for i in value %}
-    <div class="content">
-        <h2 class="name"  ><b>{{i[0]}}   :   {{i[1]}}</b></h2>
-    </div>
-    {% endfor%}
+    <table class="table">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Quest
+            </th>
+        </tr>
+        {% for i in value %}
+        <tr>
+            <td class="name">
+                {{i[0]}}
+            </td>  
+            <td>
+                {{i[1]}}
+            </td>  
+        </tr>
+        {% endfor%}
+    </table>
+
+
+
+
+    </table>
+    
 
 
     

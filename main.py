@@ -26,5 +26,5 @@ def get_board():
         score[name]=quest_count
 
     sort_orders = sorted(score.items(), key=lambda x: x[1], reverse=True)
-    return sort_orders
+    return sort_orders[0:20]
 
