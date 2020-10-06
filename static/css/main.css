@@ -105,7 +105,10 @@ table, th, td {
 th, td {
   padding: 5px;
 }
-tr:hover {background-color:yellow}
+tr:hover {
+  background-color:yellow;
+  transform: scale(1.5);
+}
 
 .form{
     width:80%;
@@ -189,6 +192,7 @@ tr:hover {background-color:yellow}
     table{
       width: 500px;
       font-size: 30px;
+      margin-left: 30%;
     }
     .head{
       font-size: 35px;
