@@ -1,0 +1,231 @@
+body {
+    font-family: sans-serif;
+    color:black;
+}
+.bg {
+    
+    background-image: url("https://c3.ai/wp-content/uploads/2019/06/newsroom-background-google-alliance.jpg");
+    
+    height: 100%;
+    margin: 0px;
+
+    
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    }
+
+.topnav {
+    background-color:white;
+    overflow: hidden;
+    font-weight: 800;
+    width: 100%;
+    position: fixed;
+  }
+  
+
+  .topnav a {
+    float: left;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a.navbar-brand{
+    padding:16px 14px 16px 10px;
+  }
+
+  .topnav a:hover {
+    background-color:black;
+    color:white;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color:black;
+  }
+  
+
+  .topnav .icon {
+    display: none;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+.form{
+    width:80%;
+    margin-left: 10% ;
+
+}
+.head{
+    font-size: 30px;
+    margin-left: 10%;
+    margin-top: 56px;
+}
+.score{
+    padding-left: 5%;
+}
+.reset{
+    margin-left: 10%;
+    background-color: white;
+    
+}
+.footer{
+    background-color: white;
+    color: black;
+    position: fixed;
+    font-weight: 800;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5px;
+
+}
+.reset{
+  padding:0.5% 1%;
+}
+
+
+
+
+@media (min-width: 992px)
+{
+    .score{
+        margin-left: 10%;
+        background-color:white;
+        color:black;
+        font-weight: 600;
+        font-size: 25px;;
+        width:30%;
+    }
+    .section{
+      float:left;
+      width:40%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 80px;
+    }
+    .instructions{
+      background-color: aliceblue; 
+      color:black; 
+      padding: 2%; 
+      width:36%;  
+
+    }
+    .footer{
+      font-size:15px;
+      padding-bottom: 10px;
+      padding-top: 5px;
+    }
+    .logo{
+      width:20px;
+    }
+    .form{
+      font-size:25px;
+    }
+    .reset{
+      margin-bottom: 90px;
+    }
+    input,select{
+      font-size:20px;
+    }
+}
+@media (min-width: 768px) and (max-width:991px)
+{
+    .score{
+        margin-left: 10%;
+        background-color:white;
+        color:black;
+        font-weight: 600;
+        font-size: 25px;;
+        width:40%;
+    }
+    .section{
+      float:left;
+      width:30%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .instructions{
+      background-color: aliceblue; 
+      color:black; 
+      padding: 2%; 
+      width:26%;  
+      font-style: bold; 
+      margin-bottom: 50px;
+    }
+    .footer{
+        font-size:15px;
+    }
+    .logo{
+      width:25px;
+    }
+
+
+    
+}
+@media (max-width: 767px)
+{
+    .score{
+        margin-left: 10%;
+        background-color:white;
+        color:black;
+        font-weight: 600;
+        font-size: 17px;;
+        width:80%;
+    }
+    .section{
+      float:none;
+      width:80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 20px;
+    }
+    .instructions{
+      background-color: aliceblue; 
+      color:black; 
+      padding: 2%; 
+      width:76%;  
+      font-style: bold; 
+      margin-bottom: 70px;
+    }
+    .footer{
+      font-size:10px;
+    }
+    .logo{
+      width: 20px;
+    }
+    
+}
+
