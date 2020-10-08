@@ -272,10 +272,6 @@ th, td {
     .head{
       font-size: 20px;
     }
-    tr:hover {
-      background-color:yellow;
-      transform: scale(1.05);
-    }
     .navbar-brand{
       padding: 0px 12px;
     }
