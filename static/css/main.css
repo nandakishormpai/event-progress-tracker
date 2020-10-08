@@ -236,7 +236,9 @@ th, td {
       padding: 0px 12px;
     }
 
-    
+}
+.topnav .dis{
+  padding: 0px;
 }
 @media (max-width: 767px)
 {
@@ -275,6 +277,14 @@ th, td {
     .navbar-brand{
       padding: 0px 12px;
     }
+    .topnav .dis{
+      padding-left: 16px;
+    }
+  
     
 }
-
+.topnav .discord{
+  height: 52px;
+  width: 92px;
+  padding-bottom: 2px;
+}
