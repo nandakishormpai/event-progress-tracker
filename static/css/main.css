@@ -4,7 +4,7 @@ body {
 }
 .bg {
     
-    background-image: url("https://c3.ai/wp-content/uploads/2019/06/newsroom-background-google-alliance.jpg");
+    background-image: url("https://i.imgur.com/lYENiSS.jpg");
     
     height: 100%;
     margin: 0px;
@@ -38,8 +38,8 @@ body {
     font-size: 17px;
   }
   
-  .topnav a.navbar-brand{
-    padding:16px 14px 16px 10px;
+  .topnav .navbar-brand{
+    padding: 6px 12px;
   }
 
   .topnav a:hover {
@@ -196,7 +196,10 @@ th, td {
     }
     tr:hover {
       background-color:yellow;
-      transform: scale(1.1);
+      transform: scale(1.05);
+    }
+    .navbar-brand{
+      padding: 0px 12px;
     }
 }
 @media (min-width: 768px) and (max-width:991px)
@@ -229,7 +232,9 @@ th, td {
     .logo{
       width:25px;
     }
-
+    .navbar-brand{
+      padding: 0px 12px;
+    }
 
     
 }
@@ -269,7 +274,10 @@ th, td {
     }
     tr:hover {
       background-color:yellow;
-      transform: scale(1.1);
+      transform: scale(1.05);
+    }
+    .navbar-brand{
+      padding: 0px 12px;
     }
     
 }
