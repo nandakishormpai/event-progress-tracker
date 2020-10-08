@@ -240,6 +240,10 @@ th, td {
 .topnav .dis{
   padding: 0px;
 }
+.topnav .dsc{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 @media (max-width: 767px)
 {
     .score{
@@ -287,4 +291,10 @@ th, td {
   height: 52px;
   width: 92px;
   padding-bottom: 2px;
+}
+.topnav .dsc{
+  height: 24px;
+  width: 41px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
