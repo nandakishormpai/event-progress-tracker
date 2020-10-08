@@ -105,10 +105,7 @@ table, th, td {
 th, td {
   padding: 5px;
 }
-tr:hover {
-  background-color:yellow;
-  transform: scale(1.5);
-}
+
 
 .form{
     width:80%;
@@ -197,6 +194,10 @@ tr:hover {
     .head{
       font-size: 35px;
     }
+    tr:hover {
+      background-color:yellow;
+      transform: scale(1.1);
+    }
 }
 @media (min-width: 768px) and (max-width:991px)
 {
@@ -265,6 +266,10 @@ tr:hover {
     }
     .head{
       font-size: 20px;
+    }
+    tr:hover {
+      background-color:yellow;
+      transform: scale(1.1);
     }
     
 }
