@@ -7,6 +7,7 @@ def create_dict():
         for row in csv_reader:
             if (row[0]=="Timestamp"):
                 continue
+            row[1]=row[1].lower()
             diction[row[1]]=row[2]
     return diction
 
