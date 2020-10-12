@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/a.css">
+    <link rel="stylesheet" href="/static/css/b.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>30 Days of GCP CET</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="brand-name">
+                    <a href="#home"><img class="icon" src="https://i.imgur.com/jMPjg8G.png" alt=""></a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a class="nav-link" href="https://events.withgoogle.com/30daysofgooglecloud/">Website</a></li>
+                        
+                        <li><a href="https://discord.gg/vKB24AZ">
+                                <img class="icon" id="discord"
+                                    src="https://discord.com/assets/e4923594e694a21542a489471ecffa50.svg" alt=""></a>
+                        </li>
+                        <li><a href="https://dsc.community.dev/college-of-engineering-trivandrum/">
+                                <img class="icon" id="dev" src="https://www.dscsdmc.org/img/logo.png" alt=""></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div style="margin-top: 100px;" class="l-wrapper">
+        <div class="c-header"><img class="c-logo" src="/static/GCP (1).svg" alt="" />
+
+        </div>
+
+        <div class="l-grid">
+
+
+            <div class="l-grid__item">
+                <div class="c-card">
+                    <div class="c-card__body">
+                        <ul class="c-list" id="list">
+                            <li class="c-list__item">
+                                <div class="c-list__grid">
+                                    <div class="u-text--left u-text--small u-text--medium">Rank</div>
+                                    <div class="u-text--left u-text--small u-text--medium">Name</div>
+                                    <div class="u-text--right u-text--small u-text--medium">Quests</div>
+                                </div>
+                            </li>
+
+                            {% set count = namespace(value=1) %}
+                            {% for i in value %}
+
+                            <li class="c-list__item">
+                                <div class="c-list__grid">
+                                    <div class="c-flag c-place u-bg--transparent">{{count.value}}
+                                        {% set count.value = count.value + 1 %}</div>
+                                    <div class="c-media">
+                                        
+                                        <div class="c-media__content">
+                                            <div class="c-media__title">{{i[0]}}</div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="u-text--right c-kudos">
+                                        <div class="u-mt--8">
+                                            <strong>{{i[1]}} <span class="emoji"></span></strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor%}
+                            
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    
+    <footer>
+        Developed by Nanda kishore M Pai <a href="https://github.com/nandakishormpai2001/event-progress-tracker/">&nbsp;<em class="fa fa-github fa-2x"></em></a>
+    </footer>
+
+    <script src="/static/js/a.js"></script>
+    <script src="/static/js/jQuery.min.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
