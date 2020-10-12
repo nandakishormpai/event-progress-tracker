@@ -82,10 +82,10 @@ button, select {
 .l-grid {
   display: -ms-grid;
   display: grid;
-  width: 60%;
+  width: 100%;
   margin: auto;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
   grid-column-gap: 1.6rem;
   grid-row-gap: 1.6rem;
   position: relative;
