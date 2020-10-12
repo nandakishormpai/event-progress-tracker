@@ -22,9 +22,3 @@ $(document).ready(function(){
     })
 
 });
-
-
-function myfun() {
-    const x = document.querySelector(".nav-toggle")
-    
-}
