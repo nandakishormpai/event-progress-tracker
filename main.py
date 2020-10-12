@@ -56,7 +56,13 @@ def get_board():
     print(str(score))
 
     sort_orders = sorted(score.items(), key=lambda x: x[1], reverse=True)
-    return sort_orders[0:20]
+    i=0
+    for i in range(0,len(sort_orders)):
+        if(int(sort_orders[i][1])>0):
+            i=i+1
+        else:
+            break
+    return sort_orders[0:i]
 
 
 get_board()

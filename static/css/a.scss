@@ -1,0 +1,361 @@
+:root {
+	--black: #000000;
+	--white: #ffffff;
+	--darkest: #101010;
+	--darker: #16171A;
+	--dark: #A3AFBF;
+	--medium: #DFE7EF;
+	--light: #CAD4E1;
+	--lighter: #F5F8FC;
+	--lightest: var(--white);
+	
+	--primary: #7B16FF;
+	--primary-light: #DDD9FF;
+	--primary-trans: rgba(123,22,255,0.4);
+	
+	--yellow: #FDCB6E;
+	--orange: #E17055;
+	--teal: #00CEC9;
+	
+	--bg: var(--darkest);
+	--color: var(--lightest);
+	--surface: var(--darker);
+}
+
+$states: (
+	light: var(--lightest),
+	primary: var(--primary),
+	dark: var(--darkest),
+	transparent: transparent,
+	medium: var(--medium),
+	yellow: var(--yellow),
+	orange: var(--orange),
+	teal: var(--teal),
+	light-gradient: linear-gradient(to top, var(--light), var(--lightest)),
+);
+
+$spacing-unit: 0.8rem;
+
+$spacers: (
+	2: $spacing-unit/4,
+	4: $spacing-unit/2,
+	8: $spacing-unit,
+	16: $spacing-unit*2,
+	24: $spacing-unit*3,
+	32: $spacing-unit*4
+);
+
+html {
+	font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before,*:after {
+	box-sizing: inherit;
+}
+
+html,body {
+	width: 100%;
+}
+
+body {
+	background: var(--bg);
+	color: var(--color);
+	font-size: 1.6rem;
+	font-family: 'Overpass Mono', system-ui;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-top: $spacing-unit;
+	margin-bottom: $spacing-unit;
+	font-family: 'Oswald', system-ui;
+}
+
+a {
+	color: var(--primary);
+	text-decoration: none;
+	transition: all 120ms ease-out 0s;
+	display: inline-block;
+	border-radius: $spacing-unit/2;
+	&:hover {
+
+		// background: var(--primary-trans);
+		// color: var(--primary-light);
+		// box-shadow: 0px 0px 0px $spacing-unit/2 var(--primary-trans);
+	}
+}
+
+button, textarea, input, select {
+	font-family: inherit;
+	color: inherit;
+	&:active, &:focus {
+		outline: 0;
+	}
+}
+
+button,select {
+	cursor: pointer;
+}
+
+.l-wrapper {
+	width: 100%;
+	max-width: 960px;
+	margin: auto;
+	padding: $spacing-unit*2 $spacing-unit*2 $spacing-unit*4;
+}
+
+.l-grid {
+	display: grid;
+	width: 100%;
+	margin: auto;
+	grid-template-columns: 2fr 1fr;
+	grid-column-gap: $spacing-unit*2;
+	grid-row-gap: $spacing-unit*2;
+	position: relative;
+	@media screen and(max-width: 700px) {
+		grid-template-columns: 1fr;
+		width: 100%;
+		margin: auto;
+	}
+}
+
+.c-header {
+	padding: $spacing-unit*2 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2.4rem;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		height: $spacing-unit/4;
+		background: var(--primary-trans);
+	}
+}
+
+.c-card {
+	border-radius: $spacing-unit;
+	background: var(--surface);
+	width: 100%;
+	margin-bottom: $spacing-unit*2;
+	box-shadow: 0px 0px 0px 1px rgba(white, 0.12);
+	&__body, &__header {
+		padding: $spacing-unit*3;
+		@media screen and(max-width: 700px) {
+			padding: $spacing-unit*1.5;
+		}
+	}
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 0;
+		@media screen and(max-width: 700px) {
+			flex-direction: column;
+		}
+	}
+}
+
+.c-place {
+	@media screen and(max-width: 700px) {
+			transform: translateY(4px);
+		}
+}
+
+.c-logo {
+	display: inline-block;
+	width: 100%;
+	max-width: $spacing-unit*122;
+	user-select: none;
+}
+
+.c-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	&__item {
+		padding: $spacing-unit*2 0;
+		.c-flag {
+			margin-top: $spacing-unit;
+		}
+		@media screen and(max-width: 700px) {
+			.c-flag {
+				margin-top: $spacing-unit/2;
+			}
+		}
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: $spacing-unit*6 3fr 1fr;
+		grid-column-gap: $spacing-unit*3;
+		@media screen and (max-width: 700px) {
+			grid-template-columns: $spacing-unit*4 3fr 1fr;
+			grid-column-gap: $spacing-unit;
+		}
+	}
+}
+
+.c-media {
+		display: inline-flex;
+	align-items: center;
+	&__content {
+		padding-left: $spacing-unit*2;
+		@media screen and(max-width: 700px) {
+			padding-left: $spacing-unit;
+		}
+	}
+	&__title {
+		margin-bottom: $spacing-unit/2;
+		@media screen and(max-width: 700px) {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+.c-avatar {
+	$size: $spacing-unit*6;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: $size;
+	height: $size;
+	box-shadow: inset 0px 0px 0px 1px currentColor;
+	border-radius: 50%;
+	background: var(--lightest);
+	color: var(--dark);
+	@media screen and (max-width: 700px) {
+		$size: $spacing-unit*4;
+		width: $size;
+		height: $size;
+	}
+	&--lg {
+		$size: $spacing-unit*12;
+		width: $size;
+		height: $size;
+	}
+}
+
+.c-button {
+	display: inline-block;
+	background: var(--dark);
+	border: 0;
+	border-radius: $spacing-unit/2;
+	padding: $spacing-unit*1.5 $spacing-unit*2.5;
+	transition: all 120ms ease-out 0s;
+	&--block {
+		display: block;
+		width: 100%;
+	}
+	&:hover, &:focus {
+		filter: brightness(0.9);
+	}
+	&:focus {
+		box-shadow: 0px 0px 0px $spacing-unit/2 var(--primary-trans);
+	}
+	&:active {
+		box-shadow: 0px 0px 0px $spacing-unit/2 var(--primary-trans), inset 0px 0px $spacing-unit rgba(black, 0.2);
+		filter: brightness(0.8);
+	}
+}
+
+.c-select {
+	background: transparent;
+	padding: $spacing-unit*1.5;
+	appearance: none;
+	font-size: 1.4rem;
+	border-color: rgba(white, 0.2);
+	transition: all 120ms ease-out 0s;
+	&:hover {
+		background: var(--darkest);
+	}
+}
+
+.c-flag {
+	$size: $spacing-unit*4;
+	display: inline-flex;
+	justify-content: center;
+	width: $size;
+	height: $size;
+	background: var(--lightest);
+	border-radius: $spacing-unit/2;
+	@media screen and (max-width: 700px) {
+		$size: $spacing-unit*3;
+		width: $size;
+		height: $size;
+	}
+}
+
+@each $key,$val in $states {
+	.c-button--#{$key} {
+		background: $val;
+	}
+}
+
+.u-text--title {
+	font-family: 'Oswald', system-ui;
+}
+
+.u-text {
+	&--left {
+		text-align: left;
+	}
+	&--center {
+		text-align: center;
+	}
+	&--right {
+		text-align: right;
+	}
+}
+
+@each $key,$val in $states {
+	.u-bg--#{$key} {
+		background: $val !important;
+	}
+	.u-text--#{$key} {
+		color: $val !important;
+	}
+}
+
+.u-display--flex {
+	display: flex;
+}
+
+$flex-directions: (center,flex-end,flex-start,space-between);
+
+@each $direction in $flex-directions {
+	.u-align--#{$direction} {
+		align-items: $direction;
+	}
+	.u-justify--#{$direction} {
+		justify-content: $direction;
+	}
+}
+
+.u-text--small {
+	font-size: 1.4rem;
+}
+
+$directions: (
+	l: left,
+	r: right,
+	b: bottom,
+	t: top
+);
+
+@each $key,$val in $spacers {
+	@each $abbr,$direction in $directions {
+		.u-p#{$abbr}--#{$key} {
+			padding-#{$direction}: $val;
+		}
+		.u-m#{$abbr}--#{$key} {
+			margin-#{$direction}: $val;
+		}
+	}
+}
