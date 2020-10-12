@@ -280,12 +280,10 @@ button,select {
 .c-flag {
 	$size: $spacing-unit*4;
 	display: inline-flex;
-	align-items: center;
 	justify-content: center;
 	width: $size;
 	height: $size;
 	background: var(--lightest);
-	color: var(--dark);
 	border-radius: $spacing-unit/2;
 	@media screen and (max-width: 700px) {
 		$size: $spacing-unit*3;
