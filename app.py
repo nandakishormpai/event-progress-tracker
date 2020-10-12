@@ -6,7 +6,7 @@ app=Flask(__name__)
 def new():
     leader_board=get_board()
     print(leader_board)
-    return render_template('main.html',value=leader_board)
+    return render_template('a.html',value=leader_board)
 
 
 if __name__=='__main__' :
