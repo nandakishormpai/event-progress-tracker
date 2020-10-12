@@ -109,9 +109,9 @@ button,select {
 
 .l-grid {
 	display: grid;
-	width: 60%;
+	width: 100%;
 	margin: auto;
-	grid-template-columns: 1fr;
+	grid-template-columns: 2fr 1fr;
 	grid-column-gap: $spacing-unit*2;
 	grid-row-gap: $spacing-unit*2;
 	position: relative;

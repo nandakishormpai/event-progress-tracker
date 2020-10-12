@@ -24,7 +24,8 @@ $(document).ready(function(){
 });
 
 
-function myfun() {
-    const x = document.querySelector(".nav-toggle")
-    
-}
+CSS.registerProperty({
+    name: '--p',
+    syntax: '<integer>',
+    initialValue: 0,
+    inherits: true });
