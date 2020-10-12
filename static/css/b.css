@@ -45,6 +45,12 @@ footer{
     margin: 0;
     padding: 0;
     text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 2;
+}
+
+footer em{
+    color: #fff;
 }
 @media(max-width: 700px) {
     #icons {
@@ -65,8 +71,13 @@ footer{
 
 /* Header  */
 .container {
-    width: 80%;
+    width: 70%;
     margin: auto;
+}
+@media(max-width: 700px){
+    .container{
+        width: 100%;
+    }
 }
 
 .header {
@@ -167,6 +178,7 @@ footer{
 .header .nav ul li {
     display: inline-block;
     margin-left: 30px;
+    vertical-align: -webkit-baseline-middle;
 }
 
 .header .nav ul li a {
@@ -210,8 +222,7 @@ footer{
 
     .header .nav-toggle {
         display: flex;
-        margin-right: 15px;
-        margin-left: 60%;
+        margin-left: 65%;
         
     }
 
