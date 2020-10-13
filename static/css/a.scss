@@ -203,8 +203,8 @@ button,select {
 }
 
 .c-media {
-		display: inline-flex;
-	align-items: center;
+	display: inline-flex;
+	align-items: flex-end;
 	&__content {
 		padding-left: $spacing-unit*2;
 		@media screen and(max-width: 700px) {
