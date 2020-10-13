@@ -309,15 +309,15 @@ footer em{
 .c-list__grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 4.8rem 3fr 1fr 1fr;
-        grid-template-columns: 4.8rem 3fr 1fr 1fr;
+    -ms-grid-columns: 3fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr 1fr;
     grid-column-gap: 2.4rem;
   }
   
   @media screen and (max-width: 700px) {
     .c-list__grid {
-      -ms-grid-columns: 3.2rem 3fr 1fr 1fr;
-          grid-template-columns: 3.2rem 3fr 1fr 1fr;
+      -ms-grid-columns: 3fr 1fr 1fr;
+          grid-template-columns: 3fr 1fr 1fr;
       grid-column-gap: 0.8rem;
     }
   }
