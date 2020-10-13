@@ -13,6 +13,23 @@
 </head>
 
 <style>
+    .c-list__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr 1fr !important;
+        grid-template-columns: 3fr 1fr 1fr !important;
+    grid-column-gap: 2.4rem;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .c-list__grid {
+      -ms-grid-columns: 3fr 1fr 1fr !important;
+          grid-template-columns: 3fr 1fr 1fr !important;
+      grid-column-gap: 0.8rem;
+    }
+  }
+
+
     .loader {
     --p: 0;
     display: grid;
