@@ -7,7 +7,7 @@ Huge thanks to [Tanmay Ambadkar](https://github.com/TanmayAmbadkar) for helping 
 
 
 ## Contributors
-* [Nanda Kishor M Pai](https://github.com/nandakishormpai2001)
-* [Muhammad Haseeb Kamal](https://github.com/CrimsonScythe)
-* [Antony S John](https://github.com/AntonySJohn)
-* [Tanmay Ambadkar](https://github.com/TanmayAmbadkar)
+* [Nanda Kishor M Pai](https://github.com/nandakishormpai2001) : Back end
+* [Ajay Krishna KV](https://github.com/AJAYK-01) : Back end
+* [Rahul T](https://github.com/rawho) : Front end
+* [Tanmay Ambadkar](https://github.com/TanmayAmbadkar) : Back end
