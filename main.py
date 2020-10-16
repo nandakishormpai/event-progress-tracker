@@ -17,15 +17,15 @@ async def scrape(name, url):
 
     # res = requests.get(link) 
     noStarchSoup = bs4.BeautifulSoup(res,"html.parser")   
-    quests = noStarchSoup.select('div .public-profile__badge')
-    #name =  (noStarchSoup.select('div .public-profile__hero h1')[0].getText())[1:-1]
+    badges_divs = noStarchSoup.find_all("ql-badge")
     
-    badges=noStarchSoup.select('div .public-profile__badge div')
-    for i in range (1,len(badges)-1,3):
-        quest_completed.append(badges[i].getText()[1:-1])
-    for k in quest_completed:
-        if (k in quest_list):
-            quest_count=quest_count+1
+    quest_count=0
+    for badge in badges_divs:
+        b = badge.get("badge")
+        title = b[22:b.index('\",\"', 22)]
+        #print(title)
+        if title in quest_list:
+            quest_count+=1
 
     return dict({ 'name': name, 'count': quest_count })
 
